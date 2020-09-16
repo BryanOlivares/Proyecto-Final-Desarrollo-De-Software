@@ -1,0 +1,21 @@
+USE [Sistema_Calificacion]
+GO
+
+/****** Object:  Table [dbo].[Administrador]    Script Date: 28/01/2020 9:00:03 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Administrador](
+	[Id_Admin] [int] IDENTITY(1,1) NOT NULL,
+	[NOMBRE_Admin] [varchar](50) NULL,
+	[CEDULA_Admin] [varchar](50) NULL,
+	[Password_Admin] [varchar](50) NULL,
+ CONSTRAINT [PK_Administrador] PRIMARY KEY CLUSTERED 
+(
+	[Id_Admin] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
